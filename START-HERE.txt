@@ -1,0 +1,61 @@
+FATEMA AKHTAR - PORTFOLIO WEBSITE
+=================================
+
+RUNNING IT ON YOUR PC
+---------------------
+1. Install Node.js (LTS) from https://nodejs.org  - one time only.
+2. Open this folder in Command Prompt / PowerShell / VS Code terminal.
+3. Run:
+       npm install
+       npm run dev
+4. Open http://localhost:3000
+
+`npm install` downloads the dependencies. It takes a minute the first time and
+is not needed again.
+
+
+ADDING YOUR DASHBOARD SCREENSHOTS
+---------------------------------
+Drag each project's images into the matching folder. NO RENAMING NEEDED.
+
+    public\dashboards\logistics\     Last-Mile Delivery images
+    public\dashboards\mortgage\      Mortgage-Backed Securities images
+    public\dashboards\startup\       Startup Outcome Prediction images
+    public\dashboards\callcenter\    Call Center images
+
+Number the files to control the order they appear in:
+    1 overview.png
+    2 delay analysis.png
+    3 courier.png
+
+Refresh the browser - they appear instantly with captions already attached.
+
+Then read the captions and make sure they match what your screenshot actually
+shows. Captions are in lib\content.ts, in each project's `shots` list.
+
+
+ADDING YOUR RESUME
+------------------
+Put the PDF here, with exactly this name:
+
+    public\fatema-akhtar-resume.pdf
+
+The /resume page switches itself on - inline preview, View and Download buttons.
+
+
+BEFORE YOU PUT IT ONLINE
+------------------------
+You can usually skip this. If you deploy to Vercel or Netlify, the site works
+out its own web address automatically, so the sitemap and the LinkedIn preview
+image point at the right place on their own.
+
+Only if you host somewhere else: open lib\content.ts and change MY_DOMAIN near
+the top to your real domain.
+
+
+WHERE THE WORDS LIVE
+--------------------
+All text is in ONE file: lib\content.ts
+Nothing is hardcoded in the page files. Edit there.
+
+Full details in README.md
