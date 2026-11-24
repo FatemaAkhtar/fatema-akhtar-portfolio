@@ -240,7 +240,11 @@ export const CREDENTIALS = [
   },
   {
     title: "Full-Time Data Analytics Training Program",
-    meta: "NetTech India \u00b7 Aug 2025 \u2013 Feb 2026 \u00b7 6 Months",
+    meta: "NetTech India \u00b7 7 Months",
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    meta: "Amazon Web Services (AWS) \u00b7 September 2026",
   },
 ];
 
@@ -268,21 +272,14 @@ export type JourneyStep = {
 
 export const JOURNEY: JourneyStep[] = [
   {
-    when: "Nov 2023 \u2013 Feb 2024",
+    when: "November 2023 \u2013 February 2024",
     kind: "Internship",
-    title: "Data Analyst Intern",
+    title: "First Data Analyst Internship",
     org: "Technocolabs Softwares",
     body: "First hands-on Data Analyst internship. Data preparation and exploratory analysis: standardising raw data, checking consistency, and summarising patterns for review.",
   },
   {
-    when: "Dec 2023",
-    kind: "University research",
-    title: "Avishkar Research Convention (University Level)",
-    org: "University of Mumbai",
-    body: "Selected as the project presenter, representing the University of Mumbai with an IoT-based research project, \u201cSmart Plant Piano.\u201d",
-  },
-  {
-    when: "Apr 2025",
+    when: "2025",
     kind: "Education",
     title: "B.Sc. Information Technology",
     org: "University of Mumbai",
@@ -290,25 +287,31 @@ export const JOURNEY: JourneyStep[] = [
     noteStrong: true,
   },
   {
-    when: "Jun 2025 \u2013 Sep 2025",
+    when: "June 2025 \u2013 September 2025",
     kind: "Internship",
-    title: "Data Analyst Intern",
+    title: "Second Data Analyst Internship",
     org: "Technocolabs Softwares",
     body: "Worked on large-scale financial and operational datasets (extraction, cleaning, validation and analysis) and built reporting to communicate findings.",
   },
   {
-    when: "Aug 2025 \u2013 Feb 2026",
+    when: "7 Months",
     kind: "Formal training",
     title: "Full-Time Data Analytics Training Program",
-    org: "NetTech India \u00b7 6 Months",
-    body: "Six months of structured, full-time analytics training. A learning programme, not employment.",
+    org: "NetTech India",
+    body: "Structured, full-time analytics training. A learning programme, not employment.",
   },
   {
-    when: "Mar 2026",
+    when: "March 2026",
     kind: "Credential",
     title: "Google Data Analytics Professional Certificate",
     org: "Coursera",
     body: "Completed professional credential in data analytics.",
+  },
+  {
+    when: "September 2026",
+    kind: "Training",
+    title: "AWS Cloud Practitioner Essentials",
+    org: "Amazon Web Services (AWS)",
   },
 ];
 

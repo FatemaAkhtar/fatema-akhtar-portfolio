@@ -8,6 +8,7 @@ import { PERSON } from "@/lib/content";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
+  { href: "/current-work", label: "Current Work" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

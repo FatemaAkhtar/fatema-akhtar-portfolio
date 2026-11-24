@@ -1,0 +1,286 @@
+/* Page-specific styling for /current-work.
+   Global tokens and shared primitives stay in app/globals.css. */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 68ch;
+  margin-top: clamp(18px, 2.5vw, 28px);
+}
+
+.intro p {
+  font-size: var(--step-lead);
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.projectTitle {
+  font-size: clamp(2.25rem, 1.5rem + 3.4vw, 4rem);
+  font-weight: 470;
+  letter-spacing: -0.042em;
+  line-height: 1.02;
+  margin-block: 18px 10px;
+}
+
+.projectSub {
+  font-size: var(--step-lead);
+  color: var(--muted);
+  max-width: 52ch;
+  line-height: 1.5;
+}
+
+.shot {
+  margin: clamp(30px, 4vw, 46px) 0 0;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shot figcaption {
+  border-top: 1px solid var(--rule);
+  padding: 14px 18px 16px;
+  background: var(--paper-2);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: var(--measure);
+  margin-top: clamp(28px, 3.4vw, 40px);
+}
+
+.story p {
+  color: var(--ink-2);
+}
+
+.sectionTitle {
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);
+  font-weight: 500;
+  letter-spacing: -0.028em;
+  line-height: 1.16;
+  max-width: 30ch;
+  margin-bottom: clamp(22px, 2.6vw, 32px);
+}
+
+/* Seven analytics areas: ruled editorial index, not feature cards. */
+.areaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+}
+
+.area {
+  padding: clamp(22px, 2.6vw, 30px);
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.area:last-child {
+  grid-column: 1 / -1;
+}
+
+.areaN {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.areaTitle {
+  font-size: var(--step-h3);
+  font-weight: 550;
+  letter-spacing: -0.014em;
+  margin-bottom: 8px;
+}
+
+.areaBody {
+  font-size: var(--step-small);
+  color: var(--muted);
+  line-height: 1.62;
+  max-width: 48ch;
+}
+
+/* AI Analyst: deliberately darker and more diagrammatic than the rest. */
+.analyst {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.analystEyebrow {
+  color: rgba(251, 250, 247, 0.68);
+}
+
+.analystTitle {
+  color: var(--paper);
+  font-size: clamp(1.75rem, 1.3rem + 1.7vw, 2.75rem);
+  font-weight: 470;
+  letter-spacing: -0.034em;
+  line-height: 1.12;
+  max-width: 26ch;
+  margin-block: 16px clamp(24px, 3vw, 32px);
+}
+
+.analystCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 66ch;
+}
+
+.analystCopy p {
+  color: rgba(251, 250, 247, 0.82);
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(12px, 1.6vw, 20px);
+  margin-top: clamp(34px, 4vw, 50px);
+}
+
+.flowStep {
+  position: relative;
+  border-top: 1px solid rgba(251, 250, 247, 0.32);
+  padding-top: 18px;
+}
+
+.flowStep::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9fc4ae;
+}
+
+.flowN {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  color: #9fc4ae;
+  margin-bottom: 10px;
+}
+
+.flowT {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--paper);
+}
+
+.flowNote {
+  margin-top: clamp(24px, 3vw, 32px);
+  padding-top: 16px;
+  border-top: 1px solid rgba(251, 250, 247, 0.22);
+  font-size: var(--step-small);
+  line-height: 1.65;
+  color: rgba(251, 250, 247, 0.68);
+  max-width: 68ch;
+}
+
+.groupNote {
+  margin-top: 14px;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--accent);
+}
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: var(--measure);
+}
+
+.challenges p {
+  color: var(--ink-2);
+}
+
+.linkRows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 26px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.linkList a {
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 2px;
+  word-break: break-all;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.linkList a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .areaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .area:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .flow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .flowStep {
+    border-top: 0;
+    border-left: 1px solid rgba(251, 250, 247, 0.32);
+    padding: 0 0 24px 22px;
+  }
+
+  .flowStep::before {
+    top: 6px;
+    left: -3px;
+  }
+
+  .flowStep:last-child {
+    border-left-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .flowN {
+    margin-bottom: 5px;
+  }
+}
